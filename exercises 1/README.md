@@ -1,6 +1,6 @@
-# Laboratory
+# Laboratory 1
 
-This repository contains the mandatory exercises for the Algorithms and Data Structures I laboratory course.
+This repository contains the 1st mandatory exercises for the Algorithms and Data Structures I laboratory course.
 
 ## Exercises
 
