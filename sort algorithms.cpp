@@ -1,5 +1,6 @@
-#incluide <iostream>
 #include <vector>
+#incluide <iostream>
+
 using namespace std;
 //SELECTION SORT; O(n^2)
 int findMinPosition(vector<int> &s, int d, int h) {

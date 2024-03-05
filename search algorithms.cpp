@@ -1,5 +1,6 @@
-#incluide <iostream>
 #include <vector>
+#incluide <iostream>
+
 using namespace std;
 //BUSQUEDA LINEAL; O(n)
 bool busquedaLineal(vector<int> lista, int x){

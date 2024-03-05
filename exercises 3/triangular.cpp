@@ -5,19 +5,13 @@ using namespace std;
 
     
 bool esTriangularInferior(const vector<vector<int>> &m){
-    
-     bool res = true;
-    
+    bool res = true;
     for(int i = 0; i < m.size(); i++){
-        
         for(int j = 0 ; j<i; j++){
-            
             if(m[i][j] == 0){
                 res = res && true;
-            } else {
-                
-                res = res && false;
-                
+            } else { 
+                res = res && false;   
                 }
         }
     }
@@ -25,19 +19,13 @@ bool esTriangularInferior(const vector<vector<int>> &m){
 }
 
 bool esTriangularSuperior(const vector<vector<int>> &m){
-    
      bool res = true;
-    
     for(int i = 0; i < m.size(); i++){
-        
-        for(int j = m[0].size()-1 ; i<j; j--){
-            
+        for(int j = m[0].size()-1 ; i<j; j--){    
             if(m[i][j] == 0){
                 res = res && true;
-            } else {
-                
-                res = res && false;
-                
+            } else {    
+                res = res && false;      
                 }
         }
     }
@@ -45,10 +33,8 @@ bool esTriangularSuperior(const vector<vector<int>> &m){
 }
     
     
-    bool esTriangular(const vector<vector<int>> &m){
-        
-        bool res = esTriangularInferior(m) || esTriangularSuperior(m);
-   
+bool esTriangular(const vector<vector<int>> &m){   
+    bool res = esTriangularInferior(m) || esTriangularSuperior(m);
    return res;
 }
     
@@ -56,7 +42,6 @@ bool esTriangularSuperior(const vector<vector<int>> &m){
 
 int main()
 {
-    /* No hace falta modificar el main */
     // Leo la entrada
     int n; // Cantidad de filas y columnas de la matriz
     cin >> n;
